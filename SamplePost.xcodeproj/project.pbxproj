@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC3F224928A0DC860059E855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F224828A0DC860059E855 /* AppDelegate.swift */; };
 		FC3F224B28A0DC860059E855 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F224A28A0DC860059E855 /* SceneDelegate.swift */; };
-		FC3F224D28A0DC860059E855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F224C28A0DC860059E855 /* ViewController.swift */; };
+		FC3F224D28A0DC860059E855 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F224C28A0DC860059E855 /* PostViewController.swift */; };
 		FC3F225028A0DC860059E855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3F224E28A0DC860059E855 /* Main.storyboard */; };
 		FC3F225228A0DC8D0059E855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3F225128A0DC8D0059E855 /* Assets.xcassets */; };
 		FC3F225528A0DC8D0059E855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3F225328A0DC8D0059E855 /* LaunchScreen.storyboard */; };
@@ -23,6 +23,8 @@
 		FC3F228328A0E5C70059E855 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228228A0E5C70059E855 /* FirebaseFirestore */; };
 		FC3F228528A0E5C70059E855 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228428A0E5C70059E855 /* FirebaseFirestoreSwift */; };
 		FC3F228728A0E5C70059E855 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228628A0E5C70059E855 /* FirebaseStorage */; };
+		FC3F228D28A0EB920059E855 /* PostDefaultAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F228C28A0EB920059E855 /* PostDefaultAPI.swift */; };
+		FC3F228F28A0EBBC0059E855 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F228E28A0EBBC0059E855 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,7 @@
 		FC3F224528A0DC860059E855 /* SamplePost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplePost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F224828A0DC860059E855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3F224A28A0DC860059E855 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC3F224C28A0DC860059E855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC3F224C28A0DC860059E855 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		FC3F224F28A0DC860059E855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC3F225128A0DC8D0059E855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3F225428A0DC8D0059E855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		FC3F226528A0DC8E0059E855 /* SamplePostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F226928A0DC8E0059E855 /* SamplePostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePostUITests.swift; sourceTree = "<group>"; };
 		FC3F226B28A0DC8E0059E855 /* SamplePostUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePostUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC3F228C28A0EB920059E855 /* PostDefaultAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDefaultAPI.swift; sourceTree = "<group>"; };
+		FC3F228E28A0EBBC0059E855 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +119,9 @@
 			children = (
 				FC3F224828A0DC860059E855 /* AppDelegate.swift */,
 				FC3F224A28A0DC860059E855 /* SceneDelegate.swift */,
-				FC3F224C28A0DC860059E855 /* ViewController.swift */,
-				FC3F224E28A0DC860059E855 /* Main.storyboard */,
+				FC3F228928A0EB150059E855 /* Model */,
+				FC3F228828A0EAEE0059E855 /* View */,
+				FC3F228A28A0EB440059E855 /* ViewModel */,
 				FC3F225128A0DC8D0059E855 /* Assets.xcassets */,
 				FC3F225328A0DC8D0059E855 /* LaunchScreen.storyboard */,
 				FC3F225628A0DC8D0059E855 /* Info.plist */,
@@ -139,6 +144,31 @@
 				FC3F226B28A0DC8E0059E855 /* SamplePostUITestsLaunchTests.swift */,
 			);
 			path = SamplePostUITests;
+			sourceTree = "<group>";
+		};
+		FC3F228828A0EAEE0059E855 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F224E28A0DC860059E855 /* Main.storyboard */,
+				FC3F224C28A0DC860059E855 /* PostViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC3F228928A0EB150059E855 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F228C28A0EB920059E855 /* PostDefaultAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC3F228A28A0EB440059E855 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F228E28A0EBBC0059E855 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3F224D28A0DC860059E855 /* ViewController.swift in Sources */,
+				FC3F228F28A0EBBC0059E855 /* PostViewModel.swift in Sources */,
+				FC3F228D28A0EB920059E855 /* PostDefaultAPI.swift in Sources */,
+				FC3F224D28A0DC860059E855 /* PostViewController.swift in Sources */,
 				FC3F224928A0DC860059E855 /* AppDelegate.swift in Sources */,
 				FC3F224B28A0DC860059E855 /* SceneDelegate.swift in Sources */,
 			);
