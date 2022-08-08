@@ -16,6 +16,13 @@
 		FC3F226028A0DC8D0059E855 /* SamplePostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F225F28A0DC8D0059E855 /* SamplePostTests.swift */; };
 		FC3F226A28A0DC8E0059E855 /* SamplePostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F226928A0DC8E0059E855 /* SamplePostUITests.swift */; };
 		FC3F226C28A0DC8E0059E855 /* SamplePostUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F226B28A0DC8E0059E855 /* SamplePostUITestsLaunchTests.swift */; };
+		FC3F227A28A0E50E0059E855 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F227928A0E50E0059E855 /* RxCocoa */; };
+		FC3F227C28A0E50E0059E855 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F227B28A0E50E0059E855 /* RxRelay */; };
+		FC3F227E28A0E50E0059E855 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F227D28A0E50E0059E855 /* RxSwift */; };
+		FC3F228128A0E5C70059E855 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228028A0E5C70059E855 /* FirebaseAuth */; };
+		FC3F228328A0E5C70059E855 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228228A0E5C70059E855 /* FirebaseFirestore */; };
+		FC3F228528A0E5C70059E855 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228428A0E5C70059E855 /* FirebaseFirestoreSwift */; };
+		FC3F228728A0E5C70059E855 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F228628A0E5C70059E855 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3F227E28A0E50E0059E855 /* RxSwift in Frameworks */,
+				FC3F227C28A0E50E0059E855 /* RxRelay in Frameworks */,
+				FC3F227A28A0E50E0059E855 /* RxCocoa in Frameworks */,
+				FC3F228328A0E5C70059E855 /* FirebaseFirestore in Frameworks */,
+				FC3F228728A0E5C70059E855 /* FirebaseStorage in Frameworks */,
+				FC3F228128A0E5C70059E855 /* FirebaseAuth in Frameworks */,
+				FC3F228528A0E5C70059E855 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +157,15 @@
 			dependencies = (
 			);
 			name = SamplePost;
+			packageProductDependencies = (
+				FC3F227928A0E50E0059E855 /* RxCocoa */,
+				FC3F227B28A0E50E0059E855 /* RxRelay */,
+				FC3F227D28A0E50E0059E855 /* RxSwift */,
+				FC3F228028A0E5C70059E855 /* FirebaseAuth */,
+				FC3F228228A0E5C70059E855 /* FirebaseFirestore */,
+				FC3F228428A0E5C70059E855 /* FirebaseFirestoreSwift */,
+				FC3F228628A0E5C70059E855 /* FirebaseStorage */,
+			);
 			productName = SamplePost;
 			productReference = FC3F224528A0DC860059E855 /* SamplePost.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,10 @@
 				Base,
 			);
 			mainGroup = FC3F223C28A0DC850059E855;
+			packageReferences = (
+				FC3F227828A0E50E0059E855 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				FC3F227F28A0E5C70059E855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FC3F224628A0DC860059E855 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -596,6 +623,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC3F227828A0E50E0059E855 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		FC3F227F28A0E5C70059E855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC3F227928A0E50E0059E855 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227828A0E50E0059E855 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FC3F227B28A0E50E0059E855 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227828A0E50E0059E855 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FC3F227D28A0E50E0059E855 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227828A0E50E0059E855 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		FC3F228028A0E5C70059E855 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227F28A0E5C70059E855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FC3F228228A0E5C70059E855 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227F28A0E5C70059E855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FC3F228428A0E5C70059E855 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227F28A0E5C70059E855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FC3F228628A0E5C70059E855 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F227F28A0E5C70059E855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC3F223D28A0DC850059E855 /* Project object */;
 }
